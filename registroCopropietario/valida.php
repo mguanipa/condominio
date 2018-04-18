@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header style="height: 100px;"><img src="../images/justina.png"  align="right" style="margin-top: 0px"><h3 style="color:white; padding-top: 30px;text-align: right;" width="100" height="100">Junta de Condominio&nbsp&nbsp</h3>
-			<h4 style="color:white; text-align: right">Residencia "Justina" RIF.J30947297-6&nbsp&nbsp</h4>
-	</header>
+	<header style="height: 100px;"><img src="../images/justina.png"  align="right" style="margin-top: 0px" width="100" height="100"><h3 style="color:white; padding-top: 30px;text-align: right;" width="100" height="100">Junta de Condominio&nbsp&nbsp</h3>
+   	<h4 style="color:white; text-align: right">Residencia "Justina" RIF.J30947297-6&nbsp&nbsp</h4>
+   	</header>
 <?php
 
 include("controlador.php");
@@ -23,13 +23,14 @@ $pass = '';
 $phone = $_POST['phone'];
 $cellphone = $_POST['cellphone'];
 $npropiedad = $_POST['npropiedad'];
+$in_activo = '1';
 
 $obj = new Controlador();
 
-$final = $obj->Insert($rut, $name, $lastname, $email, $user, $pass, $phone, $cellphone, $npropiedad);
+$final = $obj->Insert($rut, $name, $lastname, $email, $user, $pass, $phone, $cellphone, $npropiedad, $in_activo);
 
 if ($final == true) {
-	print '<h2>Registro guardado con exito</h2>';
+	print '<br><br><br><center><h2>¡Registro guardado con exito!</h2></center>';
 	print '<META HTTP-EQUIV=Refresh CONTENT="2; URL=../registroCopropietario/index.php">';
 }else{
 	print '<h2>falla al insertar</h2>';

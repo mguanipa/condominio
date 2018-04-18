@@ -1,0 +1,243 @@
+@charset "utf-8";
+*{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	padding:0;
+	margin:0;
+	/*text-transform:uppercase;*/
+}
+
+.colorblanco{
+color:#FFFFFF;
+}
+
+.colorgris{
+color:#cccccc;
+}
+
+.colornegro{
+color:#000000;
+}
+
+.negrita{
+font-weight:bold;
+}
+
+.pp{
+text-align:left;
+text-shadow:#0033FF;
+font-size:18px;
+}
+
+.ventana{
+font-size:16px;
+font-style:normal;
+font-weight:bold;
+padding:250px;
+color:#BF0413;
+}
+
+.ventanaX{
+font-size:16px;
+font-style:normal;
+font-weight:bold;
+text-align: center;
+color:#000050;
+}
+.letra12{
+font-size:12px;
+font-style:normal;
+font-weight:bold;
+padding:150px;
+color:#BF0413;
+}
+
+a{
+	text-decoration:none;
+}
+body {
+background-color:#000050;
+/*<!--	background-image: url(../img/fondo6.gif);
+	background-repeat: repeat;*/
+}
+.fnd{
+    background-color:white;
+
+}
+img{
+	border:none;
+}
+#contenedor{
+	width:1060px;
+	margin:auto;
+	margin-top:10px;
+	border:1px solid #0BC30E;
+	background-color:#F3F3F3;
+	padding-bottom:30px;
+
+}
+#contenedormenu{
+	width:1060px;
+	margin:auto;
+	margin-top:0px;
+	border:1px solid #BF0413;
+	background-color:#F2F2F2;
+	padding-bottom:3px;
+        
+}
+#contenedorpie{
+	width:1060px;
+	margin:auto;
+	margin-top:0px;
+	border:1px solid #0BC30E;
+	background-color:#008000;
+	padding-bottom:3px;
+}
+#subtabla{
+	width:1060px;
+	margin:auto;
+	margin-top:0px;
+	border:0px solid #c23700;
+	background-color:#cccccc;
+	padding-bottom:3px;
+}
+#subtabla2{
+	width:1360px;
+	margin:auto;
+	margin-top:0px;
+	border:0px solid #c23700;
+	background-color:#cccccc;
+	padding-bottom:3px;
+}
+#contenidop{
+	width:1060px;
+	background-color: white;
+	color:#999999;
+}
+
+#contenidop table{
+width:1060px;
+margin:auto;
+}
+
+
+
+#contenidop tr:hover{
+background-color:#cccccc;
+border-color:#333333;
+}
+#contenidop th{
+background-color:#2C4AA0;
+color:#FFFFFF;
+height:20px;
+}
+#contenidop td{
+color:#000000;
+	border-bottom:1px solid #D3D3D3;
+	padding:0px 0px 0px;
+}
+#contenidop a{
+color:#333333;
+
+}
+small{
+	font-size:9px;
+}
+
+/*table{
+	width:900px;
+	margin:auto;
+}*/
+
+
+
+/*table:display tr.odd.pintatabla{
+background-color:#CCCCCC;
+}
+table:display tr.even.pintatabla{
+background-color:#666666;
+}*/
+
+td{
+	border-bottom:0px solid #D3D3D3;
+	padding:0px 0px 0px;
+}
+
+th{
+	background-color:#C4BAFC;
+	height:20px;
+	padding:0px 0px 0px;
+}
+
+form{
+	border:2px solid #C0C0C0;
+	background-color:#F2F2F2;
+	width:500px;
+	margin:auto;
+	margin-bottom:20px;
+}
+
+form p{
+	margin:auto;
+	width:450px;
+	margin-top:5px;
+	margin-bottom:3px;
+}
+
+form input{
+	border:1px solid #CCCCCC;
+	padding:3px;
+}
+form select{
+	border:1px solid #CCCCCC;
+	padding:3px;
+}
+
+form .text,.sel{
+	width:300px;
+}
+
+form .text1{
+	width:150px;
+}
+
+form .textrojo{
+	width:100px;
+	color:#FF0000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+#upload{
+	background:#f2f2f2;
+	cursor:pointer !important;
+	-moz-border-radius:0px; -webkit-border-radius:0px;
+}
+.darkbg{
+	background:#ddd !important;
+}
+#status{
+	font-family:Arial; padding:5px;
+}
+#files{
+	font-family:Arial; padding:150px;
+}
+/*ul#files{ list-style:none; padding:0; margin:0; }
+ul#files li{ padding:10px; margin-bottom:2px; width:200px; float:left; margin-right:10px;}
+ul#files li img{ max-width:180px; max-height:150px; }*/
+.success{ background:#99f099; border:1px solid #339933; }
+.error{ background:#f0c6c3; border:1px solid #cc6622; }
+
+#frmProductoNuevo { width: 500px; }
+#frmProductoNuevo label { width: 250px; }
+#frmProductoNuevo label.error, #frmProductoNuevo input.submit { margin-left: 10px; }
+
+/*ul, li{margin:0; padding:0; list-style:none;}
+
+.menu_head{border:1px solid #998675;}
+
+.menu_body {display:none; width:184px;border-right:1px solid #998675;border-bottom:1px solid #998675;border-left:1px solid #998675;}
+.menu_body li{background:#493e3b;}
+.menu_body li.alt{background:#362f2d;}
+.menu_body li a{color:#FFFFFF; text-decoration:none; padding:10px; display:block;}
+.menu_body li a:hover{padding:15px 10px; font-weight:bold;}*/

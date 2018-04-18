@@ -29,7 +29,7 @@ class Controlador {
 
 
 
-	public function Insert($rut, $name, $lastname, $email, $user, $pass, $phone, $cellphone, $npropiedad){
+	public function Insert($rut, $name, $lastname, $email, $user, $pass, $phone, $cellphone, $npropiedad, $in_activo){
 		$this->rut = $rut;
 		$this->name = $name;
 		$this->lastname = $lastname;
@@ -39,16 +39,17 @@ class Controlador {
 		$this->phone = $phone;
 		$this->cellphone = $cellphone;
 		$this->npropiedad = $npropiedad;
+		$this->in_activo = $in_activo;
 
 		//self llama a la misma clase y hace uso de un metodo
 		$conexion = self::conecta();
 
 		$comprueba_ci = "";
 
-		$consulta = "INSERT INTO tbl_propietario VALUES (:rut, :name, :lastname, :email, :user, :pass, :phone, :cellphone, :npropiedad)";
+		$consulta = "INSERT INTO tbl_propietario VALUES (:rut, :name, :lastname, :email, :user, :pass, :phone, :cellphone, :npropiedad, :in_activo)";
 
 		$resultado = $conexion->prepare($consulta);
-		$resultado->execute(array(':rut'=>$rut, ':name'=>$name, ':lastname'=>$lastname, ':email'=>$email, ':user'=>$user, ':pass'=>$pass, ':phone'=>$phone, ':cellphone'=>$cellphone, ':npropiedad'=>$npropiedad));
+		$resultado->execute(array(':rut'=>$rut, ':name'=>$name, ':lastname'=>$lastname, ':email'=>$email, ':user'=>$user, ':pass'=>$pass, ':phone'=>$phone, ':cellphone'=>$cellphone, ':npropiedad'=>$npropiedad, ':in_activo'=>$in_activo));
 
 
 		if($resultado){

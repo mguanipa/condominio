@@ -109,3 +109,36 @@ body div.login button {
 	width: 50%;
 
 }
+#contenidop{
+	width:1060px;
+	background-color: white;
+	color:#999999;
+}
+
+#contenidop table{
+width:1060px;
+margin:auto;
+}
+
+
+
+#contenidop tr:hover{
+background-color:#cccccc;
+border-color:#333333;
+}
+#contenidop th{
+background-color:#303065;
+color:#FFFFFF;
+height:20px;
+}
+#contenidop td{
+color:#000000;
+	border-bottom:1px solid #D3D3D3;
+	padding:0px 0px 0px;
+}
+#contenidop a{
+color:#333333;
+
+}
+
+

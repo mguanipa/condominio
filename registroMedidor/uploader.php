@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="ztyle.css">
 </head>
 <body>
-	<header style="height: 100px;"><img src="../images/justina.png"  align="right" style="margin-top: 0px"><h3 style="color:white; padding-top: 30px;text-align: right;" width="100" height="100">Junta de Condominio&nbsp&nbsp</h3>
-			<h4 style="color:white; text-align: right">Residencia "Justina" RIF.J30947297-6&nbsp&nbsp</h4>
-	</header>
+	<header style="height: 100px;"><img src="../images/justina.png"  align="right" style="margin-top: 0px" width="100" height="100"><h3 style="color:white; padding-top: 30px;text-align: right;" width="100" height="100">Junta de Condominio&nbsp&nbsp</h3>
+   	<h4 style="color:white; text-align: right">Residencia "Justina" RIF.J30947297-6&nbsp&nbsp</h4>
+   	</header>
 	<?php
 	include("controlador.php");
 	session_start();
